@@ -52,7 +52,7 @@ const about = () => {
             <p className="text-brown_primary text-xl uppercase font-light tracking-widest">get in touch</p>
             <h2 className="text-center md:w-[70%] sm:w-[80%] w-full text-3xl font-bold font-urbanist text-wht mt-7 mb-10">Yes, that"s all about me. There is no better time to connect with me via socials or filling the contact form.</h2>
             <Link  href={"/contact"}>
-               <button className="text-base font-normal bg mb-10 py-5 px-10 text-wht rounded-lg tracking-widest active:scale-95 bg-brown_secondary down hover:bg-c_green_hover" >Let"s Talk</button>
+               <button className="text-base font-normal bg mb-10 py-5 px-10 text-wht rounded-lg tracking-widest active:scale-95 bg-brown_secondary down hover:bg-c_green_hover" >Let's Talk</button>
             </Link>
         </div>
 
