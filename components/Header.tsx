@@ -31,7 +31,7 @@ function Header() {
   // button function
 function toggle(){
   setclick(!click)
-  
+
 }
 
 const items=[
@@ -110,10 +110,10 @@ const items=[
           `}>
         <ul className='flex flex-col h-full items-center  gap-y-9 mt-32 text-wht capitalize text-xl  '>
             {
-            items.map((e)=>{
+            items.map((e,idx)=>{
               const active=e.link === path
                 return(
-                  <li className={`hover:text-brown_primary down 
+                  <li key={idx}  className={`hover:text-brown_primary down 
                     ${active ? "text-brown_primary" : ""}
                     `}><Link href={`${e.link}`}>{e.name}</Link></li>
                 )
