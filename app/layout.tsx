@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
           <head>
-        <link rel="icon" href="/images/favicon/logo1.png" />
+        <link rel="icon" href="/images/favicon/logo2.png" />
       </head>
       <body
   
