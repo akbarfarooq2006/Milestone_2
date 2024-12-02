@@ -29,23 +29,23 @@ const blogs = () => {
         <BLog_main
         link={"/images/blog/hostinger.png"}
         p="Host a MERN Stack App on a VPS"
-        h='200'
-        w='500'
-        web=''
+        h={200}
+        w={500}
+        web='/'
         />
         <BLog_main
         link={"/images/blog/react.jpg"}
         p="How to create a Blog app using React.js?"
-        h='500'
-        w='3040'
-        web=""
+        h={500}
+        w={3040}
+        web="/"
         />
         <BLog_main
         link={"/images/blog/system.png"}
         p="What is Good Web Design? 8 Principles to Follow"
-        h='200'
-        w='500'
-        web=""
+        h={200}
+        w={500}
+        web="/"
         />
       </div>
   </div>
@@ -56,7 +56,6 @@ const blogs = () => {
 
 
 </>
-
 
   )
 }

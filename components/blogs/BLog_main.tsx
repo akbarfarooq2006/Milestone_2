@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { MoveRightIcon } from 'lucide-react'
 
 
-const BLog_main = ({link,p,h,w,web}:{link:string,p:string,h:string,w:string,web:string}) => {
+const BLog_main = ({link,p,h,w,web}:{link:string,p:string,h:number,w:number,web:string}) => {
   return (
     <div>
         <Link href={web} className=' w-full'>
@@ -12,8 +12,8 @@ const BLog_main = ({link,p,h,w,web}:{link:string,p:string,h:string,w:string,web:
             <Image
             alt='/'
             src={link}
-            width={w}
-            height={h}
+            width={`${w}`}
+            height={`${h}`}
             className='rounded-md'
             />
             <div className='flex flex-col gap-y-3 p-4'>

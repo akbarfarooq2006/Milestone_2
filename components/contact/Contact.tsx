@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { ArrowRight,ArrowBigRight,ArrowUpRight }from 'lucide-react';
+import { ArrowRight}from 'lucide-react';
 
 
 const Contact = () => {
@@ -110,4 +110,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

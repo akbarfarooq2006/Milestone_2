@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 const Blog_Box = ({p1,h3,p2}:{p1:string,h3:string,p2:string}) => {
   return (
     <>

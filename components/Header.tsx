@@ -3,15 +3,12 @@ import React,{useState,useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { log } from 'console'
-// import { useRouter } from 'next/router'
 
 
 function Header() {
   const [click, setclick] = useState(true)
   const [scroll, setscroll] = useState(false)
   const path= usePathname()
-  // console.log(path); // jis bi page jao page ka naam bataga
 
   useEffect(() => {
     
@@ -34,7 +31,7 @@ function Header() {
   // button function
 function toggle(){
   setclick(!click)
-  // console.log(click);
+  
 }
 
 const items=[
@@ -96,10 +93,10 @@ const items=[
         <div className='md:flex hidden '>
           <ul className='md:flex text-wht capitalize text-xl gap-x-12 '>
             {
-            items.map((e)=>{
+            items.map((e,idx)=>{
               const active=e.link === path
                 return(
-                  <li className={`hover:text-brown_primary down 
+                  <li key={idx} className={`hover:text-brown_primary down 
                     ${active ? "text-brown_primary" : ""}
                     `}><Link href={`${e.link}`}>{e.name}</Link></li>
                 )
