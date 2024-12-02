@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +19,66 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #2A2A2A;
+  font-family: 'jost';
+}
+
+
+.container{
+ width: clamp(16rem, 85vw, 85rem);
+  margin-inline: auto;  
+}
+
+.down{
+  transition: all 0.2s;
+}
+.down2{
+  transition: all 1s;
+}
+.title{
+    text-transform: uppercase;
+    letter-spacing: 0.32rem;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D69667;
+    font-weight: 300;
+}
+.ptype{
+  font-size: 17px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+}
+
+.box_shadow{
+  box-shadow:rgb(214, 150, 103) 2rem -2rem 1rem -2rem
+}
+
+
+.yaxis::-webkit-scrollbar{
+  display: none;
+}
+.setinset{
+inset: 28rem 0px 0px;
+}
+
+.fill:-webkit-autofill {
+  background-color: brown !important; /* Use the original background */
+  color: inherit !important;           /* Use the original text color */
+  font-size: inherit !important;            /* Inherit font styles */
+  border: inherit !important;          /* Use the original border */
+  box-shadow: inherit !important;      /* Reset box-shadow (if any) */
+}
+
+.about_gradient{
+background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)) 0% 0% / 100% no-repeat, url("/images/about_image.png") rgb(35, 35, 35);
+
+}
+
+.contact_after::after{
+  content: "";
+  z-index: -1;
+  background: rgb(35, 35, 35);
+  position: absolute;
+  inset: 24rem 0px 0px;
 }

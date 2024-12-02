@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/Header";
+import { Urbanist,Jost } from 'next/font/google'
+import Footer from "@/components/Footer";
+ 
+const urbanist = Urbanist({
+  subsets: ['latin'],
+  variable: '--font-urbanist',
+})
+const jost= Jost({
+  subsets: ['latin'],
+  variable: '--font-jost'
+})
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,10 +37,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+          <head>
+        <link rel="icon" href="/images/favicon/logo1.png" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+  
+        className={`${geistSans.variable} ${geistMono.variable} antialiased 
+          ${urbanist.variable} ${jost.variable}
+          `}
       >
+
+<Header/>
         {children}
+<Footer/>
+
       </body>
     </html>
   );
