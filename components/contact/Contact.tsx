@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 {/* input2 email*/}
                 <div className='flex flex-col gap-y-1  '>
-                  <label htmlFor="email" className='text-wht text-[14px] font-normal'>Your Email</label>
+                   <label htmlFor="email" className='text-wht text-[14px] font-normal'>Your Email</label>
                   <input type="email"  name="email" id="email" required placeholder='email@address.com'
                   className='bg-primary focus:outline-none border-[1px] border-brown_primary/0  focus:border-brown_primary  
                   p-3  text-wht text-[14px] font-normal placeholder:text-[14px] placeholder:text-light_black
